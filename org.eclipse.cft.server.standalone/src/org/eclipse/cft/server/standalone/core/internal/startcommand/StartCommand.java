@@ -17,18 +17,31 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.startcommand;
+package org.eclipse.cft.server.standalone.core.internal.startcommand;
 
-public enum StartCommandType {
-	Java("Java start command"), Other("Other start command"); //$NON-NLS-1$ //$NON-NLS-2$
+import java.util.List;
 
-	private String description;
+/**
+ * Defines a Standalone start command for a given runtime type. A start command
+ * may be defined by multiple start command types. For example, a Java start
+ * command may defined a java application start command "java ..." or a script
+ * file.
+ * <p/>
+ * If defining multiple start command definitions, a default start command type
+ * can also be specified.
+ */
+public abstract class StartCommand {
 
-	private StartCommandType(String description) {
-		this.description = description;
-	}
+	/**
+	 * The start command in the form that it would be used to start the
+	 * application.
+	 */
+	abstract public String getStartCommand();
 
-	public String getDescription() {
-		return description;
-	}
+	abstract public StartCommandType getDefaultStartCommandType();
+
+	abstract public List<StartCommandType> getStartCommandTypes();
+
+	abstract public String getArgs();
+
 }

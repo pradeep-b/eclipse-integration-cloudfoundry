@@ -17,7 +17,7 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.application;
+package org.eclipse.cft.server.standalone.core.internal.application;
 
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.runtime.IAdaptable;

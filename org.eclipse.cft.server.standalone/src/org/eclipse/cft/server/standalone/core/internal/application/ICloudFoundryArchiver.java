@@ -1,4 +1,4 @@
-package org.eclipse.cft.server.standalone.internal.application;
+package org.eclipse.cft.server.standalone.core.internal.application;
 
 import org.cloudfoundry.client.lib.archive.ApplicationArchive;
 import org.eclipse.core.runtime.CoreException;

@@ -17,7 +17,7 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal;
+package org.eclipse.cft.server.standalone.core.internal;
 
 import org.eclipse.core.runtime.Plugin;
 import org.osgi.framework.BundleContext;
@@ -28,7 +28,7 @@ import org.osgi.framework.BundleContext;
 public class CloudFoundryJavaStandalonePlugin extends Plugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "org.eclipse.cft.server.standalone"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "org.eclipse.cft.server.standalone.core"; //$NON-NLS-1$
 
 	// The shared instance
 	private static CloudFoundryJavaStandalonePlugin plugin;

@@ -36,7 +36,7 @@ import org.eclipse.cft.server.core.internal.CloudFoundryServer;
 import org.eclipse.cft.server.core.internal.application.CloudZipApplicationArchive;
 import org.eclipse.cft.server.core.internal.application.JavaWebApplicationDelegate;
 import org.eclipse.cft.server.core.internal.client.CloudFoundryApplicationModule;
-import org.eclipse.cft.server.standalone.internal.application.ICloudFoundryArchiver;
+import org.eclipse.cft.server.standalone.core.internal.application.ICloudFoundryArchiver;
 import org.eclipse.cft.server.standalone.ui.internal.Messages;
 import org.eclipse.cft.server.ui.internal.CloudUiUtil;
 import org.eclipse.core.resources.IContainer;

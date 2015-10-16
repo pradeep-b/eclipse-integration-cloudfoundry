@@ -17,7 +17,7 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.application;
+package org.eclipse.cft.server.standalone.core.internal.application;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.cft.server.core.internal.CloudFoundryProjectUtil;
-import org.eclipse.cft.server.standalone.internal.startcommand.JavaStartCommand;
+import org.eclipse.cft.server.standalone.core.internal.startcommand.JavaStartCommand;
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;

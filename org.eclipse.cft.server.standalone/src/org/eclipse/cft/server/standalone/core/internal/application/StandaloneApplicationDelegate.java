@@ -17,7 +17,7 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.application;
+package org.eclipse.cft.server.standalone.core.internal.application;
 
 import org.cloudfoundry.client.lib.archive.ApplicationArchive;
 import org.eclipse.cft.server.core.internal.CloudFoundryProjectUtil;

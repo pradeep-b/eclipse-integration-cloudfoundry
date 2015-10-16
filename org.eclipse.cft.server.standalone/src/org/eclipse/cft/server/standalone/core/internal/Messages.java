@@ -18,7 +18,7 @@
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
 
-package org.eclipse.cft.server.standalone.internal;
+package org.eclipse.cft.server.standalone.core.internal;
 
 import org.eclipse.osgi.util.NLS;
 

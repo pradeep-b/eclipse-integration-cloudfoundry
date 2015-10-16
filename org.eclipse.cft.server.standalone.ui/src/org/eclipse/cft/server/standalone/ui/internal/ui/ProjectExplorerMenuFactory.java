@@ -22,7 +22,7 @@ package org.eclipse.cft.server.standalone.ui.internal.ui;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.cft.server.standalone.internal.application.StandaloneFacetHandler;
+import org.eclipse.cft.server.standalone.core.internal.application.StandaloneFacetHandler;
 import org.eclipse.cft.server.standalone.ui.internal.Messages;
 import org.eclipse.cft.server.ui.internal.actions.AbstractMenuContributionFactory;
 import org.eclipse.core.expressions.IEvaluationContext;

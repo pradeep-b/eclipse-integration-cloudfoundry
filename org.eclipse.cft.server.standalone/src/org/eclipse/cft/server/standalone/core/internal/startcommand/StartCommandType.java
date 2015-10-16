@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2014 Pivotal Software, Inc. 
+ * Copyright (c) 2012, 2014 Pivotal Software, Inc. 
  * 
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Apache License, 
@@ -17,21 +17,18 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.application;
+package org.eclipse.cft.server.standalone.core.internal.startcommand;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.wst.server.core.util.ProjectModule;
+public enum StartCommandType {
+	Java("Java start command"), Other("Other start command"); //$NON-NLS-1$ //$NON-NLS-2$
 
-/**
- * Use a regular project module delegate for Java applications as the Java
- * applications are archived based on Java launch configurations and other
- * application repackaging only on deployment.
- * 
- */
-public class JavaLauncherModuleDelegate extends ProjectModule {
+	private String description;
 
-	public JavaLauncherModuleDelegate(IProject project) {
-		super(project);
+	private StartCommandType(String description) {
+		this.description = description;
 	}
 
+	public String getDescription() {
+		return description;
+	}
 }

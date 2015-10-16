@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
-Bundle-SymbolicName: org.eclipse.cft.server.standalone;singleton:=true
+Bundle-SymbolicName: org.eclipse.cft.server.standalone.core;singleton:=true
 Bundle-Version: 1.8.3.qualifier
 Bundle-Vendor: %Bundle-Vendor
-Bundle-Activator: org.eclipse.cft.server.standalone.internal.CloudFoundryJavaStandalonePlugin
+Bundle-Activator: org.eclipse.cft.server.standalone.core.internal.CloudFoundryJavaStandalonePlugin
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.wst.common.project.facet.core,
  org.eclipse.wst.server.core,
@@ -20,4 +20,4 @@ Bundle-ClassPath: .,
  lib/commons-logging-1.2.jar,
  lib/spring-boot-loader-tools-1.2.3.RELEASE.jar,
  lib/spring-core-4.1.6.RELEASE.jar
-Export-Package: org.eclipse.cft.server.standalone.internal.application
+Export-Package: org.eclipse.cft.server.standalone.core.internal.application

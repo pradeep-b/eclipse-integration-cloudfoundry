@@ -17,7 +17,7 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.startcommand;
+package org.eclipse.cft.server.standalone.core.internal.startcommand;
 
 import java.io.StringWriter;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package org.eclipse.cft.server.standalone.internal.application;
+package org.eclipse.cft.server.standalone.core.internal.application;
 
 import org.eclipse.cft.server.core.internal.CloudErrorUtil;
 import org.eclipse.core.runtime.CoreException;
@@ -24,7 +24,7 @@ public class CloudFoundryArchiverRegistry {
 	}
 
 	private void createArchiver() throws CoreException {
-		final String ARCHIVER_DELEGATE = "org.eclipse.cft.server.standalone.archiverDelegate";
+		final String ARCHIVER_DELEGATE = "org.eclipse.cft.server.standalone.core.archiverDelegate";
 		final String ARCHIVER_ELEMENT = "archiver";
 		final String CLASS_ATTR = "class";
 		
