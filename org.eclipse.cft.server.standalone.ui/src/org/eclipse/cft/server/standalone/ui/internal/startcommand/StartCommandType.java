@@ -17,36 +17,18 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.startcommand;
+package org.eclipse.cft.server.standalone.ui.internal.startcommand;
 
-import org.eclipse.cft.server.ui.internal.UIPart;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Control;
+public enum StartCommandType {
+	Java("Java start command"), Other("Other start command"); //$NON-NLS-1$ //$NON-NLS-2$
 
-/**
- * Base part that allows a UI part to be defined to set a Java start command
- * 
- */
-public abstract class StartCommandPart extends UIPart {
-	private final Composite parent;
+	private String description;
 
-	private Control composite;
-
-	protected StartCommandPart(Composite parent) {
-		this.parent = parent;
+	private StartCommandType(String description) {
+		this.description = description;
 	}
 
-	public Control getComposite() {
-		if (composite == null) {
-			composite = createPart(parent);
-		}
-		return composite;
+	public String getDescription() {
+		return description;
 	}
-
-	/**
-	 * Tells the part to update the start command from current values of in the
-	 * UI control and notify listeners with the revised start command
-	 */
-	abstract public void updateStartCommand();
-
 }

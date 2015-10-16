@@ -17,7 +17,7 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.application;
+package org.eclipse.cft.server.standalone.ui.internal.application;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -36,7 +36,8 @@ import org.eclipse.cft.server.core.internal.CloudFoundryServer;
 import org.eclipse.cft.server.core.internal.application.CloudZipApplicationArchive;
 import org.eclipse.cft.server.core.internal.application.JavaWebApplicationDelegate;
 import org.eclipse.cft.server.core.internal.client.CloudFoundryApplicationModule;
-import org.eclipse.cft.server.standalone.internal.Messages;
+import org.eclipse.cft.server.standalone.internal.application.ICloudFoundryArchiver;
+import org.eclipse.cft.server.standalone.ui.internal.Messages;
 import org.eclipse.cft.server.ui.internal.CloudUiUtil;
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
@@ -54,6 +55,10 @@ import org.eclipse.jdt.internal.ui.jarpackagerfat.FatJarRsrcUrlBuilder;
 import org.eclipse.jdt.ui.jarpackager.IJarBuilder;
 import org.eclipse.jdt.ui.jarpackager.IJarExportRunnable;
 import org.eclipse.jdt.ui.jarpackager.JarPackageData;
+//import org.eclipse.jdt.internal.ui.jarpackagerfat.FatJarRsrcUrlBuilder;
+//import org.eclipse.jdt.ui.jarpackager.IJarBuilder;
+//import org.eclipse.jdt.ui.jarpackager.IJarExportRunnable;
+//import org.eclipse.jdt.ui.jarpackager.JarPackageData;
 import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
@@ -74,7 +79,7 @@ import org.springframework.boot.loader.tools.Repackager;
  * application's manifest.yml
  * 
  */
-public class JavaCloudFoundryArchiver {
+public class JavaCloudFoundryArchiver implements ICloudFoundryArchiver {
 
 	private final CloudFoundryApplicationModule appModule;
 

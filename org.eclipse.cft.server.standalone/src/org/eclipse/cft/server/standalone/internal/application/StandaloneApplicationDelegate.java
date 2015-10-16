@@ -65,8 +65,8 @@ public class StandaloneApplicationDelegate extends
 			CloudFoundryApplicationModule appModule,
 			CloudFoundryServer cloudServer, IModuleResource[] moduleResources,
 			IProgressMonitor monitor) throws CoreException {
-		return new JavaCloudFoundryArchiver(appModule, cloudServer)
-				.getApplicationArchive(monitor);
+		ICloudFoundryArchiver archiver = CloudFoundryArchiverRegistry.INSTANCE.getArchiver();
+		return archiver.getApplicationArchive(monitor);
 	}
-
+	
 }

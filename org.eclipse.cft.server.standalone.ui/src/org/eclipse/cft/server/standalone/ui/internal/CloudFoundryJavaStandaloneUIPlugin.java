@@ -17,26 +17,26 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal;
+package org.eclipse.cft.server.standalone.ui.internal;
 
-import org.eclipse.core.runtime.Plugin;
+import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
 /**
  * The activator class controls the plug-in life cycle
  */
-public class CloudFoundryJavaStandalonePlugin extends Plugin {
+public class CloudFoundryJavaStandaloneUIPlugin extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "org.eclipse.cft.server.standalone"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "org.eclipse.cft.server.standalone.ui"; //$NON-NLS-1$
 
 	// The shared instance
-	private static CloudFoundryJavaStandalonePlugin plugin;
+	private static CloudFoundryJavaStandaloneUIPlugin plugin;
 	
 	/**
 	 * The constructor
 	 */
-	public CloudFoundryJavaStandalonePlugin() {
+	public CloudFoundryJavaStandaloneUIPlugin() {
 	}
 
 	/*
@@ -62,7 +62,7 @@ public class CloudFoundryJavaStandalonePlugin extends Plugin {
 	 *
 	 * @return the shared instance
 	 */
-	public static CloudFoundryJavaStandalonePlugin getDefault() {
+	public static CloudFoundryJavaStandaloneUIPlugin getDefault() {
 		return plugin;
 	}
 

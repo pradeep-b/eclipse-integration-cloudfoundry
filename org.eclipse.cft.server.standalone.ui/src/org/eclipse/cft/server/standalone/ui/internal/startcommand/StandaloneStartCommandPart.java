@@ -17,7 +17,7 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.startcommand;
+package org.eclipse.cft.server.standalone.ui.internal.startcommand;
 
 import java.util.HashMap;
 import java.util.List;

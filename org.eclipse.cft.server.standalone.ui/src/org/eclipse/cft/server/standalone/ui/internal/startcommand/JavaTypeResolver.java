@@ -17,14 +17,14 @@
  *  Contributors:
  *     Pivotal Software, Inc. - initial API and implementation
  ********************************************************************************/
-package org.eclipse.cft.server.standalone.internal.startcommand;
+package org.eclipse.cft.server.standalone.ui.internal.startcommand;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.cft.server.core.internal.CloudFoundryPlugin;
-import org.eclipse.cft.server.standalone.internal.Messages;
-import org.eclipse.cft.server.standalone.internal.ui.SelectMainTypeWizard;
+import org.eclipse.cft.server.standalone.ui.internal.Messages;
+import org.eclipse.cft.server.standalone.ui.internal.ui.SelectMainTypeWizard;
 import org.eclipse.cft.server.ui.internal.CloudUiUtil;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.jdt.core.IJavaElement;
